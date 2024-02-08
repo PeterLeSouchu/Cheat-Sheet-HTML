@@ -42,46 +42,27 @@ body {
     "ta ta ta fo fo fo"
     "bo bo bo fo fo fo";
 }
-.header {
-    height: 10%;
-}
-.main__container {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    width: 100%;
-    gap: 1rem;
-}
-
-.main__container-item {
-    border: 2px black solid;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-
-strong {
-    font-weight: 700;
-}
 /* ----------------------- CONTAINER SETTING----------------------- */
 
 
 
 
-/* ----------------------- TABLE SETTING----------------------- */
+/* ----------------------- CONTAINER TABLE SETTING----------------------- */
 .container__table {
     border: 3px solid black;
     grid-area: ta;
     border-radius: 10px;
-    padding: 0 1rem 1rem 1rem ;
+    padding:  1rem ;
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     font-size: 1.2rem;
-}
-
-.main__container-item {
+    overflow: scroll;
     line-height: 30px;
 }
+
+strong {
+    font-weight: 700;
+}
+
 
 table {
     border-collapse: separate;
