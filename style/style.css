@@ -79,7 +79,7 @@ strong {
     font-size: 1.2rem;
 }
 
-.main__container .main__container-item:nth-child(1) {
+.main__container-item {
     line-height: 30px;
 }
 
@@ -97,11 +97,11 @@ thead {
     font-weight: 600;
 }
 th {
-    border: 1px solid black;
+    border: 1px solid blue;
     padding: .5rem;
 }
 td {
-    border: 1px solid black;
+    border: 1px solid blue;
     padding: .5rem;
     vertical-align: middle;
 }
@@ -113,16 +113,16 @@ caption {
     font-style: italic;
     font-weight: 700;
     font-size: .9rem;
-    color: yellow;
+    color: red;
 }
 .color1 {
     color: black;
 }
 .color2 {
-    color: blue;
+    color: darksalmon;
 }
 .color3 {
-    color: red;
+    color: blue;
 }
 .color4 {
     color: green;
@@ -131,7 +131,7 @@ caption {
     color: orange;
 }
 .color6 {
-    color: yellow;
+    color: red;
 }
 .color7 {
     color: purple;
