@@ -20,16 +20,51 @@
             </header>
             <main class="main__container">
                 <div class="main__container-item">
-                    <p><strong>&lt table &gt</strong> &#8594 create a table  </p>
-                    <p><strong>&lt thead / tbody / tfoot &gt</strong> &#8594 table structure (thead and tfoot have a weighter font than main)</p>
-                    <p><strong>&lt tr &gt</strong> &#8594 table row, one row always begin with &lt tr &gt  </p>
-                    <p><strong>&lt th &gt</strong> &#8594 cell data in thead, and nested in &lt tr &gt </p>
-                    <p><strong>&lt td &gt</strong> &#8594 cell data nested in &lt tr &gt</p> 
+                    <p><strong class="color1">&lt table &gt</strong> &#8594 create a table  </p>
+                    <p><strong class="color2">&lt thead / tbody / tfoot &gt</strong> &#8594 table structure (thead and tfoot have a weighter font than main)</p>
+                    <p><strong class="color3">&lt tr &gt</strong> &#8594 table row, one row always begin with &lt tr &gt  </p>
+                    <p><strong class="color4">&lt th &gt</strong> &#8594 cell data usualy use in thead, but we can also use it in tbody or tfoot in order to make a cell data more important, and it's nested in &lt tr &gt </p>
+                    <p><strong class="color5">&lt td &gt</strong> &#8594 cell data nested in &lt tr &gt</p> 
+                    <p><strong class="color6">&lt caption &gt &#8594</strong> caption of table, can be placed at first/the end/ </p>
+                    <p><strong class="color7">&lt colspan / rowspan &gt</strong>merge column or row, use as an attribut in &lt td &gt </p>
+                    <table> 
+                        <thead>
+                            <tr>
+                                <th class="color4">thead</th>
+                                <th class="color4">th</th>
+                                <th class="color4">th</th>
+                                <th class="color4">th</th>
+                                <th class="color4">th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="color5">tbody</td>
+                                <td class="color5">td</td>
+                                <td class="color5">td</td>
+                                <td class="color5">td</td>
+                                <td rowspan="2" class="color7">td with rowspan="2"</td>
+                            </tr>
+                            <tr>
+                                <td class="color5">tbody</td>
+                                <td colspan="2" class="color7">td with colspan="2"</td>
+                                <td class="color5">td</td>
+                                
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="color5">tfoot</td>
+                                <td class="color5">td</td>
+                                <td class="color5">td</td>
+                                <td class="color5">td</td>
+                                <td class="color5">td</td>
+                            </tr>
+                        </tfoot>
+                        <caption>Here,we can find the caption of this table</caption>
+                    </table>
+                </div>
 
-                </div>
-                <div class="main__container-item">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore eius unde minus doloribus. Sequi, vero a dicta distinctio repudiandae rerum voluptatem, dignissimos odit aperiam explicabo ut totam molestiae repellendus est deleniti nihil. Quia, ipsam eveniet consequuntur sint optio deserunt, aspernatur, et sunt cum reiciendis placeat blanditiis impedit nam! Quod exercitationem dicta vitae, mollitia iusto et commodi ullam culpa vero esse tempore nisi excepturi unde veritatis accusamus earum suscipit repellendus deserunt dolore. Provident ad maiores quidem quaerat earum, at sint corrupti! In sapiente dicta omnis eius asperiores incidunt.
-                </div>
             </main>
         </section>
 
