@@ -17,8 +17,8 @@ body {
     color: white;
 }
 .main-title {
-    font-size: 3rem;
-    padding: 2rem 0;
+    font-size: 2.5rem;
+    padding: 1rem 0 1rem 0;
     animation: effect1 .7s ease-in;
 }
 
@@ -35,6 +35,9 @@ body {
     }
     80% {
         font-size: 5rem;
+    }
+    90% {
+        font-size: ;
     }
     100% {
         font-size: 3rem;
@@ -80,6 +83,7 @@ body {
 .container__item:hover {
     border-radius: 30px;
     border: solid white 7px ;
+    cursor: pointer;
 }
 
 
@@ -105,11 +109,11 @@ body {
         transform: translateX(2%) skew(0deg);
     }
     80% {
-        transform: translateX(2%) skew(-20deg);
+        transform: translateX(2%) skew(-10deg);
 
     }
     90% {
-        transform: translateX(-2%) skew(10deg);
+        transform: translateX(-2%) skew(5deg);
     }
     100% {
         transform: translateX(0%);
@@ -123,13 +127,14 @@ strong {
 
 
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 2px;
     width: 100%;
     text-align: center;
     border: 4px solid ;
     line-height: 15px;
     margin-top: 2.5rem;
+    border-radius: 5px;
 }
 thead {
     border: 1px solid ;
@@ -137,11 +142,11 @@ thead {
 }
 th {
     border: 1px solid blue;
-    padding: .5rem;
+    padding: .7rem;
 }
 td {
     border: 1px solid blue;
-    padding: .5rem;
+    padding: .7rem;
     vertical-align: middle;
 }
 tfoot {
@@ -203,42 +208,90 @@ caption {
         transform: translateX(-2%) skew(0deg);
     }
     80% {
-        transform: translateX(-2%) skew(20deg);
+        transform: translateX(-2%) skew(10deg);
 
     }
     90% {
-        transform: translateX(2%) skew(-10deg);
+        transform: translateX(2%) skew(-5deg);
     }
     100% {
         transform: translateX(0%);
     }
 }
 .form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "ra ra te te "
+    "ra ra nu nu"
+    "se se ch ch"
+    "su su ch ch"
+    ;
+    text-align-last: left;
+    margin-top: 5rem;
+    position: relative;
+    gap: 10px;
+}
+.text {
+    grid-area: te;
+}
+.number {
+    grid-area: nu;
+}
+.select {
+    grid-area: se;
+}
+.radio {
+    grid-area: ra;
+}
+
+.checkbox {
+    grid-area: ch;
+}
+.submit {
+    grid-area: su;
+    cursor: grab;
+    font-size: 2rem;
+}
+
+.form::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 100px;
+    top: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+select {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    font-size: 1.3rem;
 }
 .df {
     display: flex;
     align-items: center;
 }
-.radio,
-.checkbox {
-    text-align: center;
+.setting-input {
+    padding: .5rem;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-.radio {
-    margin-bottom: 1rem;
-}
-input,
-select {
-    display: block;
-    margin-bottom: 2rem ;
-}
-input[type="radio"],
-input[type="checkbox"] {
-    margin: 0 1rem;
-}
-
 
 
 /* ----------------------- CONTAINER FORM SETTING----------------------- */
@@ -265,11 +318,11 @@ input[type="checkbox"] {
         transform: translateY(-2%) skew(0deg);
     }
     80% {
-        transform: translateY(-2%) skew(-20deg);
+        transform: translateY(-2%) skew(-10deg);
 
     }
     90% {
-        transform: translateY(2%) skew(10deg);
+        transform: translateY(2%) skew(5deg);
     }
     100% {
         transform: translateY(0%);

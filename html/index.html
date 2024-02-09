@@ -73,57 +73,67 @@
             <h2 class="sub-title title">Form</h2>
             <p><strong>&lt form &gt</strong> &#8594 create a form </p>
             <p><strong>&lt input &gt</strong> &#8594 create input (text / number / password / date / search... )</p>
-            <p><strong>&lt label &gt</strong> &#8594 create a text which is link with input ("for" in label = "id" in
-                input). Can be placed before / between / after input.</p>
-            <form action="#" method="post" class="form">
-                <div class="classic">
+            <p><strong>&lt label &gt</strong> &#8594 create a text which is link with input (("for" in label) = ("id" in
+                input)). Can be placed before / between / after input.</p>
 
-                    <label for="name">Enter your name</label>
+            <form action="#" method="post" class="form">
+                <div class="text setting-input">
+                    <label for="name">type="text" :</label>
                     <input type="text" id="name">
-                    <label for="age">Enter your age</label>
-                    <input type="number" id="age">
                 </div>
-                <div class="select">
+                <div class="number setting-input">
+                    <label for="age">type="number" :</label>
+                    <input type="number" id="age" min="0" max="100">
+                </div>
+                <div class="select setting-input">
 
                     <select id="animal">
-                        <option value="" disabled selected>-- Choose your favorite animal --</option>
-                        <option value="animal">cat</option>
-                        <option value="animal">dog</option>
-                        <option value="animal">perrot</option>
-                        <option value="animal">rabbit</option>
+                        <option value="" disabled selected>type="select"</option>
+                        <option value="animal">In this one</option>
+                        <option value="animal">we write "select" instead of "input"</option>
+                        <option value="animal">and inside this tag we nest </option>
+                        <option value="animal">"option" tag</option>
                     </select>
                 </div>
-                <div class="radio">
-                    <h3>Email :</h3>
-                    <div class="df">
-                        <input type="radio" id="personal" name="email">
-                        <label for="personal">personal</label>
-                    </div>
-                    <div class="df">
-
-                        <input type="radio" id="business" name="email">
-                        <label for="business">Business</label>
-                    </div>
-                </div>
-                <div class="checkbox">
-                    <h3>Which countries do you want to visit ?</h3>
-                    <div class="df">
-
-                        <input type="checkbox" id="belgium">
-                        <label for="belgium">Belgium</label>
-                    </div>
-                    <div class="df">
-
-                        <input type="checkbox" id="canada">
-                        <label for="canada">Canada</label>
-                    </div>
-                    <div class="df">
-
-                        <input type="checkbox" id="japan">
-                        <label for="japan">Japan</label>
+                <div class="radio setting-input">
+                    <h3>type="radio" :</h3>
+                    <div>
+                        <div class="df">
+                            <input type="radio" id="personal" name="email">
+                            <label for="personal">personal</label>
+                        </div>
+                        <div class="df">
+                            <input type="radio" id="business" name="email">
+                            <label for="business">Business</label>
+                        </div>
+                        <div class="df">
+                            <input type="radio" id="other" name="email">
+                            <label for="other">Other</label>
+                        </div>
                     </div>
                 </div>
-                <input type="submit" value="OK">
+                <div class="checkbox setting-input">
+                    <h3>type="checkbox"</h3>
+                    <div>
+
+                        <div class="df">
+
+                            <input type="checkbox" id="belgium">
+                            <label for="belgium">Belgium</label>
+                        </div>
+                        <div class="df">
+
+                            <input type="checkbox" id="canada">
+                            <label for="canada">Canada</label>
+                        </div>
+                        <div class="df">
+
+                            <input type="checkbox" id="japan">
+                            <label for="japan">Japan</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="submit setting-input">
 
 
 
