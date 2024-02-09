@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    background-color: rgb(46, 45, 45);
     font-family: 'Asap', sans-serif;
+    position: relative;
 }
 
 
@@ -13,15 +14,37 @@ body {
     font-family: 'Protest Riot', sans-serif;
     text-shadow: 7px 5px 7px rgba(0, 0, 0, 0.409);
     text-transform: uppercase;
+    color: white;
 }
 .main-title {
     font-size: 3rem;
     padding: 2rem 0;
+    animation: effect1 .7s ease-in;
+}
+
+@keyframes effect1 {
+    0% {
+        font-size: 0rem;
+    }
+    40% {
+        font-size: 1rem;
+    }
+    60% {
+        font-size: 2rem;
+
+    }
+    80% {
+        font-size: 5rem;
+    }
+    100% {
+        font-size: 3rem;
+    }
 }
 
 .sub-title {
    font-size: 1.8rem;
    padding: 1rem 0;
+   color: black;
 }
 /* ----------------------- TITLE SETTING----------------------- */
 
@@ -41,22 +64,59 @@ body {
     "ta ta ta fo fo fo"
     "ta ta ta fo fo fo"
     "bo bo bo fo fo fo";
+
 }
+
+.container__item {
+    border: 3px solid  white;
+    border-radius: 10px;
+    opacity: .9;
+    transition: .3s;
+}
+
+
 /* ----------------------- CONTAINER SETTING----------------------- */
-
-
-
 
 /* ----------------------- CONTAINER TABLE SETTING----------------------- */
 .container__table {
-    border: 3px solid black;
     grid-area: ta;
-    border-radius: 10px;
     padding:  1rem ;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     font-size: 1.2rem;
     overflow: scroll;
     line-height: 30px;
+    animation: effect2 1s ease-in ;
+}
+
+@keyframes effect2 {
+    0% {
+        transform: translateX(-110%);
+        
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    79% {
+        transform: translateX(2%) skew(0deg);
+    }
+    80% {
+        transform: translateX(2%) skew(-20deg);
+
+    }
+    90% {
+        transform: translateX(-2%) skew(10deg);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.container__table:hover {
+    transform: scale(1.1) translateX(10%);
+    z-index: 2;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 100px;
 }
 
 strong {
@@ -118,20 +178,93 @@ caption {
     color: purple;
 }
 
-/* ----------------------- TITLE SETTING----------------------- */
+/* ----------------------- CONTAINER TABLE SETTING----------------------- */
 
 
 
 
 
+/* ----------------------- CONTAINER FORM SETTING----------------------- */
 .container__form {
-    border: 3px solid black;
     grid-area: fo;
-    border-radius: 10px;
-    
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    animation: effect3 1s ease-in  forwards;
+    transform: translateX(110%);
+    animation-delay: .3s;
+   
 }
+
+@keyframes effect3 {
+    0% {
+        transform: translateX(110%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    79% {
+        transform: translateX(-2%) skew(0deg);
+    }
+    80% {
+        transform: translateX(-2%) skew(20deg);
+
+    }
+    90% {
+        transform: translateX(2%) skew(-10deg);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.container__form:hover {
+    transform: scale(1.05) translate(-10%, -3%);
+    z-index: 2;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+
+
+/* ----------------------- CONTAINER FORM SETTING----------------------- */
+
+
+
+
+/* ----------------------- CONTAINER BONUS SETTING----------------------- */
 .container__bonus {
-    border: 3px solid black;
-    border-radius: 10px;
     grid-area: bo;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    animation: effect4 1s ease-in forwards;
+    transform: translateY(150%);
+    animation-delay: .6s;
 }
+@keyframes effect4 {
+    0% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translateY(140%);
+    }
+    79% {
+        transform: translateY(-2%) skew(0deg);
+    }
+    80% {
+        transform: translateY(-2%) skew(-20deg);
+
+    }
+    90% {
+        transform: translateY(2%) skew(10deg);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.container__bonus:hover {
+    transform: scale(1.2) translate(10%, -30%);
+    z-index: 2;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 100px;
+}
+/* ----------------------- CONTAINER BONUS SETTING----------------------- */
