@@ -75,6 +75,7 @@ body {
     padding:  1rem ;
     font-size: 1.2rem;
     line-height: 30px;
+    overflow: scroll;
 }
 .container__item:hover {
     border-radius: 30px;
@@ -89,7 +90,6 @@ body {
 .container__table {
     grid-area: ta;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    overflow: scroll;
     animation: effect2 1s ease-in;
 }
 
@@ -212,6 +212,31 @@ caption {
     100% {
         transform: translateX(0%);
     }
+}
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.df {
+    display: flex;
+    align-items: center;
+}
+.radio,
+.checkbox {
+    text-align: center;
+}
+.radio {
+    margin-bottom: 1rem;
+}
+input,
+select {
+    display: block;
+    margin-bottom: 2rem ;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 1rem;
 }
 
 
