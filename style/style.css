@@ -69,10 +69,15 @@ body {
 
 .container__item {
     border: 3px solid  white;
-    border-radius: 10px;
+    border-radius: 7px;
     opacity: .9;
-    transition: .3s;
+    transition: .2s;
 }
+.container__item:hover {
+    border-radius: 30px;
+    border: solid white 7px ;
+}
+
 
 
 /* ----------------------- CONTAINER SETTING----------------------- */
@@ -85,7 +90,7 @@ body {
     font-size: 1.2rem;
     overflow: scroll;
     line-height: 30px;
-    animation: effect2 1s ease-in ;
+    animation: effect2 1s ease-in;
 }
 
 @keyframes effect2 {
@@ -111,13 +116,6 @@ body {
     }
 }
 
-.container__table:hover {
-    transform: scale(1.1) translateX(10%);
-    z-index: 2;
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 100px;
-}
 
 strong {
     font-weight: 700;
@@ -215,13 +213,6 @@ caption {
         transform: translateX(0%);
     }
 }
-.container__form:hover {
-    transform: scale(1.05) translate(-10%, -3%);
-    z-index: 2;
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 100px;
-}
 
 
 
@@ -260,11 +251,4 @@ caption {
     }
 }
 
-.container__bonus:hover {
-    transform: scale(1.2) translate(10%, -30%);
-    z-index: 2;
-    opacity: 1;
-    cursor: pointer;
-    border-radius: 100px;
-}
 /* ----------------------- CONTAINER BONUS SETTING----------------------- */
