@@ -69,8 +69,62 @@
 
         </section>
 
-        <section class="container__form container__item"></section>
-        <section class="container__bonus container__item"></section>
+        <section class="container__form container__item">
+            <h2 class="sub-title title">Form</h2>
+            <p><strong>&lt form &gt</strong> &#8594 create a form </p>
+            <p><strong>&lt input &gt</strong> &#8594 create input (text / number / password / date / search... )</p>
+            <p><strong>&lt label &gt</strong> &#8594 create a text which is link with input ("for" in label = "id" in
+                input). Can be placed before / between / after input.</p>
+            <div class="form-code">
+                <form action="#" method="post">
+                    <div class="classic">
+
+                        <label for="name">Enter your name</label>
+                        <input type="text" id="name">
+                        <label for="age">Enter your age</label>
+                        <input type="number" id="age">
+                    </div>
+                    <div class="select">
+
+                        <select id="animal">
+                            <option value="" disabled selected>-- Choose your favorite animal --</option>
+                            <option value="animal">cat</option>
+                            <option value="animal">dog</option>
+                            <option value="animal">perrot</option>
+                            <option value="animal">rabbit</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <h3>Email :</h3>
+                        <input type="radio" id="personal" name="email">
+                        <label for="personal">personal</label>
+                        <input type="radio" id="business" name="email">
+                        <label for="business">Business</label>
+                    </div>
+                    <div class="checkbox">
+                        <h3>Which countries do you want to visit ?</h3>
+                        <input type="checkbox" id="belgium">
+                        <label for="belgium">Belgium</label>
+                        <input type="checkbox" id="canada">
+                        <label for="canada">Canada</label>
+                        <input type="checkbox" id="japan">
+                        <label for="japan">Japan</label>
+                    </div>
+                    <input type="submit" value="OK">
+
+
+
+                </form>
+            </div>
+
+
+
+        </section>
+        <section class="container__bonus container__item">
+
+            <p>
+                < link rel="stylesheet" href=""=put a icon on our web site</p>
+        </section>
     </div>
 </body>
 

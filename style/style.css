@@ -43,7 +43,7 @@ body {
 
 .sub-title {
    font-size: 1.8rem;
-   padding: 1rem 0;
+   padding: 0 0 2rem 0;
    color: black;
 }
 /* ----------------------- TITLE SETTING----------------------- */
@@ -72,6 +72,9 @@ body {
     border-radius: 7px;
     opacity: .9;
     transition: .2s;
+    padding:  1rem ;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 .container__item:hover {
     border-radius: 30px;
@@ -85,11 +88,8 @@ body {
 /* ----------------------- CONTAINER TABLE SETTING----------------------- */
 .container__table {
     grid-area: ta;
-    padding:  1rem ;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    font-size: 1.2rem;
     overflow: scroll;
-    line-height: 30px;
     animation: effect2 1s ease-in;
 }
 
