@@ -75,7 +75,7 @@ ul {
 .container__item {
     border: 3px solid  white;
     border-radius: 7px;
-    opacity: .9;
+    opacity: .8;
     transition: .2s;
     padding:  1rem ;
     font-size: 1.2rem;
@@ -86,6 +86,7 @@ ul {
     border-radius: 30px;
     border: solid white 7px ;
     cursor: pointer;
+    opacity: 1;
 }
 
 
@@ -98,6 +99,10 @@ ul {
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     animation: effect2 1s ease-in;
 }
+/* .container__table:hover {
+    transform: scale(1.2) translate(20%, 20%);
+    z-index: 2;
+} */
 
 @keyframes effect2 {
     0% {
