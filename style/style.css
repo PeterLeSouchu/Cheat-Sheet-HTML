@@ -342,3 +342,41 @@ select {
 }
 
 /* ----------------------- CONTAINER BONUS SETTING----------------------- */
+
+
+@media screen and (max-width:800px) {
+    .container {
+        display: block;
+    }
+    .container__item {
+        margin: 1rem 0;
+    
+    }
+   
+}
+
+@media screen and (max-width:670px) {
+    .form {
+        display: block;
+        text-align: center;
+    }
+    .setting-input {
+        margin: .5rem;
+    }
+    .submit {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container__item {
+        font-size: .8rem;
+        line-height: 24px;
+    }
+    table {
+        font-size: 0.8rem;
+    }
+    td {
+        padding: .2rem;
+    }
+}
