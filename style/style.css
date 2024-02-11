@@ -6,10 +6,9 @@ body {
     font-family: 'Asap', sans-serif;
     position: relative;
 }
-li,
-ul {
-    list-style: circle;
-}
+
+
+
 
 
 /* ----------------------- TITLE SETTING----------------------- */
@@ -25,7 +24,6 @@ ul {
     padding: 1rem 0 1rem 0;
     animation: effect1 .7s ease-in;
 }
-
 @keyframes effect1 {
     0% {
         font-size: 0rem;
@@ -44,7 +42,6 @@ ul {
         font-size: 3rem;
     }
 }
-
 .sub-title {
    font-size: 1.8rem;
    padding: 0 0 2rem 0;
@@ -54,6 +51,9 @@ ul {
 
 
 
+
+
+/* ----------------------------------------------- HTML CHEAT SHEET------------------------------------------ */
 
 /* ----------------------- CONTAINER SETTING----------------------- */
 .container {
@@ -71,7 +71,6 @@ ul {
     "bo bo bo fo fo fo";
 
 }
-
 .container__item {
     border: 3px solid  white;
     border-radius: 7px;
@@ -81,6 +80,7 @@ ul {
     font-size: 1.2rem;
     line-height: 30px;
     overflow: scroll;
+    user-select: none;
 }
 .container__item:hover {
     border-radius: 30px;
@@ -88,10 +88,11 @@ ul {
     cursor: pointer;
     opacity: 1;
 }
-
-
-
 /* ----------------------- CONTAINER SETTING----------------------- */
+
+
+
+
 
 /* ----------------------- CONTAINER TABLE SETTING----------------------- */
 .container__table {
@@ -99,11 +100,6 @@ ul {
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     animation: effect2 1s ease-in;
 }
-/* .container__table:hover {
-    transform: scale(1.2) translate(20%, 20%);
-    z-index: 2;
-} */
-
 @keyframes effect2 {
     0% {
         transform: translateX(-110%);
@@ -126,13 +122,9 @@ ul {
         transform: translateX(0%);
     }
 }
-
-
 strong {
     font-weight: 700;
 }
-
-
 table {
     border-collapse: collapse;
     border-spacing: 2px;
@@ -187,7 +179,6 @@ caption {
 .color7 {
     color: purple;
 }
-
 /* ----------------------- CONTAINER TABLE SETTING----------------------- */
 
 
@@ -203,7 +194,6 @@ caption {
     animation-delay: .3s;
    
 }
-
 @keyframes effect3 {
     0% {
         transform: translateX(110%);
@@ -277,8 +267,6 @@ caption {
 .search {
     grid-area: sea;
 }
-
-
 input {
     padding: 10px;
     border-radius: 10px;
@@ -304,9 +292,8 @@ select {
     justify-content: space-around;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-
-
 /* ----------------------- CONTAINER FORM SETTING----------------------- */
+
 
 
 
@@ -340,8 +327,93 @@ select {
         transform: translateY(0%);
     }
 }
-
 /* ----------------------- CONTAINER BONUS SETTING----------------------- */
+/* ----------------------------------------------- HTML CHEAT SHEET------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- CSS CHEAT SHEET------------------------------------------ */
+/* ----------------------- CONTAINER SETTING----------------------- */
+.container2 {
+    padding: 1rem;
+    height: 88vh;
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "fl fl fl cl cl cl"
+    "fl fl fl cl cl cl"
+    "fl fl fl cl cl cl"
+    "fl fl fl gr gr gr"
+    "fl fl fl gr gr gr";
+}
+/* ----------------------- CONTAINER2 SETTING----------------------- */
+
+
+
+
+
+/* ----------------------- CONTAINER2 FLEX SETTING----------------------- */
+.container2__flex {
+    grid-area: fl;
+    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+}
+.flex-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ----------------------- CONTAINER2 FLEX SETTING----------------------- */
+
+
+
+
+/* ----------------------- CONTAINER2 GRID SETTING----------------------- */
+.container2__grid {
+    grid-area: gr;
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    line-height: 35px;
+}
+.repeat-method {
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    border-radius: 5px;
+    padding: 4px;
+}
+.classic-method {
+    background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+    border-radius: 5px;
+    padding: 4px;
+}
+/* ----------------------- CONTAINER2 GRID SETTING----------------------- */
+
+
+
+
+/* ----------------------- CONTAINER2 CLASS SETTING----------------------- */
+.container2__class {
+    grid-area: cl;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+/* ----------------------- CONTAINER2 CLASS SETTING----------------------- */
+/* ----------------------------------------------- CSS CHEAT SHEET------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:800px) {
@@ -380,3 +452,4 @@ select {
         padding: .2rem;
     }
 }
+
