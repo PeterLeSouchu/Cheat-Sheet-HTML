@@ -15,220 +15,231 @@
 
 <body>
     <h1 class="main-title title">HTML Cheat Sheet <button><i class="fa-solid fa-chevron-right"></i></button></h1>
+    <div class="all">
+        <div class="container">
+
+            <section class="container__table container__item">
+                <h2 class="sub-title title">Table</h2>
+                <p><strong class="color1">&lt table &gt &#8594</strong> create a table </p>
+                <p><strong class="color2">&lt thead / tbody / tfoot &gt &#8594</strong> table structure (thead and tfoot
+                    have a weighter font than main)</p>
+                <p><strong class="color3">&lt tr &gt &#8594</strong> table row, one row always begin with &lt tr &gt
+                </p>
+                <p><strong class="color4">&lt th &gt &#8594 </strong> cell data usualy use in thead, but we can also use
+                    it
+                    in tbody or tfoot in order to make a cell data more important, and it's nested in &lt tr &gt </p>
+                <p><strong class="color5">&lt td &gt &#8594</strong> cell data nested in &lt tr &gt</p>
+                <p><strong class="color6">&lt caption &gt &#8594</strong> caption of table, can be placed at first/the
+                    end/
+                </p>
+                <p><strong class="color7">&lt colspan / rowspan &gt &#8594 </strong> merge column or row, use as an
+                    attribut
+                    in &lt
+                    td &gt </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="color4">thead</th>
+                            <th class="color4">th</th>
+                            <th class="color4">th</th>
+                            <th class="color4">th</th>
+                            <th class="color4">th</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="color5">tbody</td>
+                            <td class="color5">td</td>
+                            <td class="color5">td</td>
+                            <td class="color5">td</td>
+                            <td rowspan="2" class="color7">td with rowspan="2"</td>
+                        </tr>
+                        <tr>
+                            <td class="color5">tbody</td>
+                            <td colspan="2" class="color7">td with colspan="2"</td>
+                            <td class="color5">td</td>
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="color5">tfoot</td>
+                            <td class="color5">td</td>
+                            <td class="color5">td</td>
+                            <td class="color5">td</td>
+                            <td class="color5">td</td>
+                        </tr>
+                    </tfoot>
+                    <caption>Here,we can find the caption of this table</caption>
+                </table>
 
 
-    <div class="container">
+            </section>
 
-        <section class="container__table container__item">
-            <h2 class="sub-title title">Table</h2>
-            <p><strong class="color1">&lt table &gt &#8594</strong> create a table </p>
-            <p><strong class="color2">&lt thead / tbody / tfoot &gt &#8594</strong> table structure (thead and tfoot
-                have a weighter font than main)</p>
-            <p><strong class="color3">&lt tr &gt &#8594</strong> table row, one row always begin with &lt tr &gt </p>
-            <p><strong class="color4">&lt th &gt &#8594 </strong> cell data usualy use in thead, but we can also use it
-                in tbody or tfoot in order to make a cell data more important, and it's nested in &lt tr &gt </p>
-            <p><strong class="color5">&lt td &gt &#8594</strong> cell data nested in &lt tr &gt</p>
-            <p><strong class="color6">&lt caption &gt &#8594</strong> caption of table, can be placed at first/the end/
-            </p>
-            <p><strong class="color7">&lt colspan / rowspan &gt &#8594 </strong> merge column or row, use as an attribut
-                in &lt
-                td &gt </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="color4">thead</th>
-                        <th class="color4">th</th>
-                        <th class="color4">th</th>
-                        <th class="color4">th</th>
-                        <th class="color4">th</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="color5">tbody</td>
-                        <td class="color5">td</td>
-                        <td class="color5">td</td>
-                        <td class="color5">td</td>
-                        <td rowspan="2" class="color7">td with rowspan="2"</td>
-                    </tr>
-                    <tr>
-                        <td class="color5">tbody</td>
-                        <td colspan="2" class="color7">td with colspan="2"</td>
-                        <td class="color5">td</td>
+            <section class="container__form container__item">
+                <h2 class="sub-title title">Form</h2>
+                <p><strong>&lt form &gt</strong> &#8594 create a form </p>
+                <p><strong>&lt input &gt</strong> &#8594 create input (text / number / password / date / search... )</p>
+                <p><strong>&lt label &gt</strong> &#8594 create a text which is link with input (("for" in label) =
+                    ("id" in
+                    input)). Can be placed before / between / after input.</p>
 
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="color5">tfoot</td>
-                        <td class="color5">td</td>
-                        <td class="color5">td</td>
-                        <td class="color5">td</td>
-                        <td class="color5">td</td>
-                    </tr>
-                </tfoot>
-                <caption>Here,we can find the caption of this table</caption>
-            </table>
+                <form action="#" method="post" class="form">
+                    <div class="text setting-input">
+                        <label for="name">type="text" :</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="number setting-input">
+                        <label for="age">type="number" :</label>
+                        <input type="number" id="age" min="0" max="100">
+                    </div>
+                    <div class="select setting-input">
 
-
-        </section>
-
-        <section class="container__form container__item">
-            <h2 class="sub-title title">Form</h2>
-            <p><strong>&lt form &gt</strong> &#8594 create a form </p>
-            <p><strong>&lt input &gt</strong> &#8594 create input (text / number / password / date / search... )</p>
-            <p><strong>&lt label &gt</strong> &#8594 create a text which is link with input (("for" in label) = ("id" in
-                input)). Can be placed before / between / after input.</p>
-
-            <form action="#" method="post" class="form">
-                <div class="text setting-input">
-                    <label for="name">type="text" :</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="number setting-input">
-                    <label for="age">type="number" :</label>
-                    <input type="number" id="age" min="0" max="100">
-                </div>
-                <div class="select setting-input">
-
-                    <select id="animal">
-                        <option value="" disabled selected>type="select"</option>
-                        <option value="animal">In this one</option>
-                        <option value="animal">we write "select" instead of "input"</option>
-                        <option value="animal">and inside this tag we nest </option>
-                        <option value="animal">"option" tag</option>
-                    </select>
-                </div>
-                <div class="radio setting-input">
-                    <h3>type="radio" :</h3>
-                    <div>
-                        <div class="df">
-                            <input type="radio" id="personal" name="email">
-                            <label for="personal">personal</label>
-                        </div>
-                        <div class="df">
-                            <input type="radio" id="business" name="email">
-                            <label for="business">Business</label>
-                        </div>
-                        <div class="df">
-                            <input type="radio" id="other" name="email">
-                            <label for="other">Other</label>
+                        <select id="animal">
+                            <option value="" disabled selected>type="select"</option>
+                            <option value="animal">In this one</option>
+                            <option value="animal">we write "select" instead of "input"</option>
+                            <option value="animal">and inside this tag we nest </option>
+                            <option value="animal">"option" tag</option>
+                        </select>
+                    </div>
+                    <div class="radio setting-input">
+                        <h3>type="radio" :</h3>
+                        <div>
+                            <div class="df">
+                                <input type="radio" id="personal" name="email">
+                                <label for="personal">personal</label>
+                            </div>
+                            <div class="df">
+                                <input type="radio" id="business" name="email">
+                                <label for="business">Business</label>
+                            </div>
+                            <div class="df">
+                                <input type="radio" id="other" name="email">
+                                <label for="other">Other</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="checkbox setting-input">
-                    <h3>type="checkbox"</h3>
-                    <div>
+                    <div class="checkbox setting-input">
+                        <h3>type="checkbox"</h3>
+                        <div>
 
-                        <div class="df">
+                            <div class="df">
 
-                            <input type="checkbox" id="belgium">
-                            <label for="belgium">Belgium</label>
-                        </div>
-                        <div class="df">
+                                <input type="checkbox" id="belgium">
+                                <label for="belgium">Belgium</label>
+                            </div>
+                            <div class="df">
 
-                            <input type="checkbox" id="canada">
-                            <label for="canada">Canada</label>
-                        </div>
-                        <div class="df">
+                                <input type="checkbox" id="canada">
+                                <label for="canada">Canada</label>
+                            </div>
+                            <div class="df">
 
-                            <input type="checkbox" id="japan">
-                            <label for="japan">Japan</label>
+                                <input type="checkbox" id="japan">
+                                <label for="japan">Japan</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class=" date setting-input">
+                    <div class=" date setting-input">
 
-                    <label for="date">type="date"</label>
-                    <input type="date" id="date">
-                </div>
-                <div class="file setting-input">
-                    <label for="file">type="file"</label>
-                    <input type="file" id file>
-                </div>
-                <div class="range setting-input">
+                        <label for="date">type="date"</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="file setting-input">
+                        <label for="file">type="file"</label>
+                        <input type="file" id file>
+                    </div>
+                    <div class="range setting-input">
 
-                    <label for="range">type="range"</label>
-                    <input type="range" id="range">
-                </div>
-                <div class="password setting-input">
-                    <label for="password">type="password"</label>
-                    <input type="password" id="password">
-                </div>
-                <div class="search setting-input">
-                    <label for="search">type="search"</label>
-                    <input type="search" placeholder="Search" id="search">
-                </div>
-                <input type="submit" value="Submit" class="submit setting-input">
-            </form>
-        </section>
+                        <label for="range">type="range"</label>
+                        <input type="range" id="range">
+                    </div>
+                    <div class="password setting-input">
+                        <label for="password">type="password"</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="search setting-input">
+                        <label for="search">type="search"</label>
+                        <input type="search" placeholder="Search" id="search">
+                    </div>
+                    <input type="submit" value="Submit" class="submit setting-input">
+                </form>
+            </section>
 
-        <section class="container__bonus container__item">
-            <h2 class="sub-title title">Bonus</h2>
-            <p><strong>Put a icon web site</strong> &#8594 link rel="shortcut icon" href="./image.png"</p>
-            <p><strong>&lt section/div &gt</strong> &#8594 section is a semantic tag unlike div tag </p>
-            <p><strong>&lt article &gt</strong> &#8594 use this tag instead section tag when we talk about a independent
-                part of
-                the site ('title+p+img' for example)
-            </p>
-            <p><strong>&lt aside &gt</strong> &#8594 use this tag when you want to give additional information to your
-                section/article
-            </p>
-            <p><strong>reset CSS</strong> &#8594 use <a href="https://meyerweb.com/eric/tools/css/reset/"
-                    target="_blank">this</a> to reset CSS. Place above other stylesheet or this will overwrite other
-                style
-            </p>
-
-
-        </section>
-    </div>
-    <div class="container2 hide">
-        <section class="container2__flex container__item">
-            <h2 class="sub-title title">Flexbox</h2>
-            <img src="../image/flex.jpg" alt="flex-cheat-sheet" class="flex-img">
-        </section>
-        <section class="container2__class container__item">
-            <h2 class="sub-title title">Pseudo-class</h2>
-            <p><strong>hover</strong> &#8594 when the client hover an element.</p>
-            <p><strong>active</strong>&#8594 when the client activate an element, usualy when he clicks on it.</p>
-            <p><strong>focus</strong>&#8594 when an element receive the "focus", usualy when the client is in inputs.
-            </p>
-            <p><strong>visited</strong> &#8594 when an element is visited, usualy "links".</p>
-            <p><strong>placeholder</strong> &#8594 modify the placeholder of inputs.</p>
-            <p><strong>select</strong> &#8594 modify appearence of an selected element, usualy use on &lt p &gt.
-            </p>
-            <p><strong>after / before</strong> &#8594 create an child element at the beginning / end of parent element.
-                With this one, we have to write "content" property.
-            </p>
+            <section class="container__bonus container__item">
+                <h2 class="sub-title title">Bonus</h2>
+                <p><strong>Put a icon web site</strong> &#8594 link rel="shortcut icon" href="./image.png"</p>
+                <p><strong>&lt section/div &gt</strong> &#8594 section is a semantic tag unlike div tag </p>
+                <p><strong>&lt article &gt</strong> &#8594 use this tag instead section tag when we talk about a
+                    independent
+                    part of
+                    the site ('title+p+img' for example)
+                </p>
+                <p><strong>&lt aside &gt</strong> &#8594 use this tag when you want to give additional information to
+                    your
+                    section/article
+                </p>
+                <p><strong>reset CSS</strong> &#8594 use <a href="https://meyerweb.com/eric/tools/css/reset/"
+                        target="_blank">this</a> to reset CSS. Place above other stylesheet or this will overwrite other
+                    style
+                </p>
 
 
+            </section>
+        </div>
+        <div class="container2 hide">
+            <section class="container2__flex container__item">
+                <h2 class="sub-title title">Flexbox</h2>
+                <img src="../image/flex.jpg" alt="flex-cheat-sheet" class="flex-img">
+            </section>
+            <section class="container2__class container__item">
+                <h2 class="sub-title title">Pseudo-class</h2>
+                <p><strong>hover</strong> &#8594 when the client hover an element.</p>
+                <p><strong>active</strong>&#8594 when the client activate an element, usualy when he clicks on it.</p>
+                <p><strong>focus</strong>&#8594 when an element receive the "focus", usualy when the client is in
+                    inputs.
+                </p>
+                <p><strong>visited</strong> &#8594 when an element is visited, usualy "links".</p>
+                <p><strong>placeholder</strong> &#8594 modify the placeholder of inputs.</p>
+                <p><strong>select</strong> &#8594 modify appearence of an selected element, usualy use on &lt p &gt.
+                </p>
+                <p><strong>after / before</strong> &#8594 create an child element at the beginning / end of parent
+                    element.
+                    With this one, we have to write "content" property.
+                </p>
 
-        </section>
-        <section class="container2__grid container__item">
-            <h2 class="sub-title title">Grid</h2>
-            <p><strong>Display : grid ;</strong> &#8594 change display "block" to "grid".</p>
 
-            <p><strong>grid-template-columns : / grid-template-rows :</strong> <span class="repeat-method">repeat (
-                    number, value ) ;</span> | <span class="classic-method"> value value value ;</span></p>
 
-            <p>&#10551 either we use <span class="repeat-method">repeat method</span> or we use <span
-                    class="classic-method">value method</span> and we write values as many times as
-                we want columns / rows. With the last one we can use differents values.</p>
+            </section>
+            <section class="container2__grid container__item">
+                <h2 class="sub-title title">Grid</h2>
+                <p><strong>Display : grid ;</strong> &#8594 change display "block" to "grid".</p>
 
-            <p><strong>grid-template-areas :</strong>
-            <pre>
+                <p><strong>grid-template-columns : / grid-template-rows :</strong> <span class="repeat-method">repeat (
+                        number, value ) ;</span> | <span class="classic-method"> value value value ;</span></p>
+
+                <p>&#10551 either we use <span class="repeat-method">repeat method</span> or we use <span
+                        class="classic-method">value method</span> and we write values as many times as
+                    we want columns / rows. With the last one we can use differents values.</p>
+
+                <p><strong>grid-template-areas :</strong>
+                <pre>
             "name1   name1   name2"
             "name1   name1   name2"
             "name3   name3   name3" ;</pre>
-            </p>
-            <p>&#10551 with this property we can build our grid, by assigning names to each child. In this example our
-                grid has 3 colums and 3 rows. </p>
-            <p>
-                <strong>grid-areas :</strong> name1/name2/name3;
-            </p>
-            <p>&#10551 with this property we name our child. This one has to be placed in the chlid container instead of
-                the 3 others. </p>
-        </section>
+                </p>
+                <p>&#10551 with this property we can build our grid, by assigning names to each child. In this example
+                    our
+                    grid has 3 colums and 3 rows. </p>
+                <p>
+                    <strong>grid-areas :</strong> name1/name2/name3;
+                </p>
+                <p>&#10551 with this property we name our child. This one has to be placed in the chlid container
+                    instead of
+                    the 3 others. </p>
+            </section>
+        </div>
     </div>
     <script src="../js/index.js"></script>
 </body>

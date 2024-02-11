@@ -4,7 +4,11 @@
 body {
     background-color: rgb(46, 45, 45);
     font-family: 'Asap', sans-serif;
-    position: relative;
+}
+
+.all {
+    display: flex;
+    position: relative; 
 }
 
 /* ----------------------- TITLE SETTING----------------------- */
@@ -73,6 +77,7 @@ button:active {
     padding: 1rem;
     height: 88vh;
     gap: 1rem;
+    transition: 1s;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(6, 1fr);
@@ -259,6 +264,7 @@ caption {
     cursor: grab;
     font-size: 1.5rem;
 }
+
 .radio {
     grid-area: ra;
 }
@@ -357,7 +363,9 @@ select {
 .container2 {
     padding: 1rem;
     height: 88vh;
+    transition: 1s;
     gap: 1rem;
+    position: absolute;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(6, 1fr);
@@ -368,10 +376,7 @@ select {
     "fl fl fl cl cl cl"
     "fl fl fl cl cl cl";
 }
-.hide {
-    transform: translateX(100%);
-    display: none;
-}
+
 /* ----------------------- CONTAINER2 SETTING----------------------- */
 
 
@@ -483,3 +488,11 @@ select {
     }
  }
  /* -----------------------------RESPONSIVE CSS--------------------------- */
+
+
+.hide {
+    transform: translateX(100%);
+}
+.hide2 {
+    transform: translateX(-100%);
+}
