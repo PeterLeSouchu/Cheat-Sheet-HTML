@@ -7,10 +7,6 @@ body {
     position: relative;
 }
 
-
-
-
-
 /* ----------------------- TITLE SETTING----------------------- */
 .title {
     text-align: center;
@@ -23,6 +19,23 @@ body {
     font-size: 2.5rem;
     padding: 1rem 0 1rem 0;
     animation: effect1 .7s ease-in;
+}
+button {
+    border-radius: 100px;
+    background: none;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    padding: .5rem;
+    opacity: .6;
+    transition: .3s;
+}
+button:hover {
+    opacity: 1;
+}
+button:active {
+    color: orange;
 }
 @keyframes effect1 {
     0% {
@@ -74,7 +87,7 @@ body {
 .container__item {
     border: 3px solid  white;
     border-radius: 7px;
-    opacity: .8;
+    opacity: .9;
     transition: .2s;
     padding:  1rem ;
     font-size: 1.2rem;
@@ -349,11 +362,15 @@ select {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    "fl fl fl cl cl cl"
-    "fl fl fl cl cl cl"
-    "fl fl fl cl cl cl"
     "fl fl fl gr gr gr"
-    "fl fl fl gr gr gr";
+    "fl fl fl gr gr gr"
+    "fl fl fl gr gr gr"
+    "fl fl fl cl cl cl"
+    "fl fl fl cl cl cl";
+}
+.hide {
+    transform: translateX(100%);
+    display: none;
 }
 /* ----------------------- CONTAINER2 SETTING----------------------- */
 
@@ -372,6 +389,7 @@ select {
 }
 
 /* ----------------------- CONTAINER2 FLEX SETTING----------------------- */
+
 
 
 
@@ -397,6 +415,7 @@ select {
 
 
 
+
 /* ----------------------- CONTAINER2 CLASS SETTING----------------------- */
 .container2__class {
     grid-area: cl;
@@ -406,16 +425,7 @@ select {
 /* ----------------------------------------------- CSS CHEAT SHEET------------------------------------------ */
 
 
-
-
-
-
-
-
-
-
-
-
+/* -----------------------------RESPONSIVE HTML--------------------------- */
 @media screen and (max-width:800px) {
     .container {
         display: block;
@@ -452,4 +462,24 @@ select {
         padding: .2rem;
     }
 }
+/* -----------------------------RESPONSIVE HTML--------------------------- */
 
+
+
+ /* -----------------------------RESPONSIVE CSS--------------------------- */
+ @media screen and (max-width:1000px) {
+    .container2 {
+        display: block;
+    }
+    .container__item {
+        margin: 1rem 0;
+    
+    }
+ }
+ @media screen and (max-width:450px) {
+    .container__item {
+        font-size: .8rem;
+        line-height: 24px;
+    }
+ }
+ /* -----------------------------RESPONSIVE CSS--------------------------- */

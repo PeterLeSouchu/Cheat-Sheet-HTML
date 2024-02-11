@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cheat Sheet HTML</title>
-    <link rel="shortcut icon" href="../image/174854.png">
+    <link rel="shortcut icon" href="../image/logo.png">
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <h1 class="main-title title">HTML Cheat Sheet <button><i class="fa-solid fa-chevron-right"></i></button></h1>
 
-    <h1 class="main-title title">HTML Cheat Sheet</h1>
 
     <div class="container">
 
         <section class="container__table container__item">
             <h2 class="sub-title title">Table</h2>
-            <p><strong class="color1">&lt table &gt</strong> &#8594 create a table </p>
-            <p><strong class="color2">&lt thead / tbody / tfoot &gt</strong> &#8594 table structure (thead and tfoot
+            <p><strong class="color1">&lt table &gt &#8594</strong> create a table </p>
+            <p><strong class="color2">&lt thead / tbody / tfoot &gt &#8594</strong> table structure (thead and tfoot
                 have a weighter font than main)</p>
-            <p><strong class="color3">&lt tr &gt</strong> &#8594 table row, one row always begin with &lt tr &gt </p>
-            <p><strong class="color4">&lt th &gt</strong> &#8594 cell data usualy use in thead, but we can also use it
+            <p><strong class="color3">&lt tr &gt &#8594</strong> table row, one row always begin with &lt tr &gt </p>
+            <p><strong class="color4">&lt th &gt &#8594 </strong> cell data usualy use in thead, but we can also use it
                 in tbody or tfoot in order to make a cell data more important, and it's nested in &lt tr &gt </p>
-            <p><strong class="color5">&lt td &gt</strong> &#8594 cell data nested in &lt tr &gt</p>
+            <p><strong class="color5">&lt td &gt &#8594</strong> cell data nested in &lt tr &gt</p>
             <p><strong class="color6">&lt caption &gt &#8594</strong> caption of table, can be placed at first/the end/
             </p>
-            <p><strong class="color7">&lt colspan / rowspan &gt</strong>merge column or row, use as an attribut in &lt
+            <p><strong class="color7">&lt colspan / rowspan &gt &#8594 </strong> merge column or row, use as an attribut
+                in &lt
                 td &gt </p>
             <table>
                 <thead>
@@ -167,10 +171,10 @@
                 part of
                 the site ('title+p+img' for example)
             </p>
-            <p><strong>&lt aside &gt</strong>&#8594 use this tag when you want to give additional information to your
+            <p><strong>&lt aside &gt</strong> &#8594 use this tag when you want to give additional information to your
                 section/article
             </p>
-            <p><strong>reset CSS</strong>&#8594 use <a href="https://meyerweb.com/eric/tools/css/reset/"
+            <p><strong>reset CSS</strong> &#8594 use <a href="https://meyerweb.com/eric/tools/css/reset/"
                     target="_blank">this</a> to reset CSS. Place above other stylesheet or this will overwrite other
                 style
             </p>
@@ -178,18 +182,31 @@
 
         </section>
     </div>
-    <div class="container2">
+    <div class="container2 hide">
         <section class="container2__flex container__item">
             <h2 class="sub-title title">Flexbox</h2>
             <img src="../image/flex.jpg" alt="flex-cheat-sheet" class="flex-img">
         </section>
         <section class="container2__class container__item">
             <h2 class="sub-title title">Pseudo-class</h2>
+            <p><strong>hover</strong> &#8594 when the client hover an element.</p>
+            <p><strong>active</strong>&#8594 when the client activate an element, usualy when he clicks on it.</p>
+            <p><strong>focus</strong>&#8594 when an element receive the "focus", usualy when the client is in inputs.
+            </p>
+            <p><strong>visited</strong> &#8594 when an element is visited, usualy "links".</p>
+            <p><strong>placeholder</strong> &#8594 modify the placeholder of inputs.</p>
+            <p><strong>select</strong> &#8594 modify appearence of an selected element, usualy use on &lt p &gt.
+            </p>
+            <p><strong>after / before</strong> &#8594 create an child element at the beginning / end of parent element.
+                With this one, we have to write "content" property.
+            </p>
+
+
 
         </section>
         <section class="container2__grid container__item">
             <h2 class="sub-title title">Grid</h2>
-            <p><strong>Display : grid ;</strong>&#8594 change display "block" to "grid".</p>
+            <p><strong>Display : grid ;</strong> &#8594 change display "block" to "grid".</p>
 
             <p><strong>grid-template-columns : / grid-template-rows :</strong> <span class="repeat-method">repeat (
                     number, value ) ;</span> | <span class="classic-method"> value value value ;</span></p>
@@ -200,9 +217,9 @@
 
             <p><strong>grid-template-areas :</strong>
             <pre>
-                        "name1   name1   name2"
-                        "name1   name1   name2"
-                        "name3   name3   name3" ;</pre>
+            "name1   name1   name2"
+            "name1   name1   name2"
+            "name3   name3   name3" ;</pre>
             </p>
             <p>&#10551 with this property we can build our grid, by assigning names to each child. In this example our
                 grid has 3 colums and 3 rows. </p>
@@ -213,6 +230,7 @@
                 the 3 others. </p>
         </section>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
