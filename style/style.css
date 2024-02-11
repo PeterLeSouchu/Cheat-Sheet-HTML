@@ -26,22 +26,9 @@ body {
     padding: 1rem 0 1rem 0;
     animation: effect1 .7s ease-in;
     position: relative;
-}
-.title-effect {
-   transition: 1s;
-    
+    transition: 1s;
 }
 
-
-@keyframes gloup {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(-100%);
-    }
-    
-}
 button {
     border-radius: 100px;
     background: none;
@@ -449,6 +436,16 @@ select {
 
 
 /* -----------------------------RESPONSIVE HTML--------------------------- */
+
+@media screen and (max-width:1000px) {
+    .form {
+        display: block;
+        text-align: center;
+    }
+    .setting-input {
+        margin: .5rem;
+    }
+}
 @media screen and (max-width:800px) {
     .container {
         display: block;
@@ -518,9 +515,7 @@ select {
 .hide2 {
     transform: translateX(-100%);
 }
-.hide3 {
-    transform: translateY(-150%);
-}
+
 .rotate {
     transform: rotate(180deg);
 }
