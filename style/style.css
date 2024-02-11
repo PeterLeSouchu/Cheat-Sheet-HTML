@@ -9,7 +9,9 @@ body {
 .all {
     display: flex;
     position: relative; 
+    overflow-x: hidden;
 }
+
 
 /* ----------------------- TITLE SETTING----------------------- */
 .title {
@@ -23,6 +25,22 @@ body {
     font-size: 2.5rem;
     padding: 1rem 0 1rem 0;
     animation: effect1 .7s ease-in;
+    position: relative;
+}
+.title-effect {
+   transition: 1s;
+    
+}
+
+
+@keyframes gloup {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(-100%);
+    }
+    
 }
 button {
     border-radius: 100px;
@@ -39,7 +57,7 @@ button:hover {
     opacity: 1;
 }
 button:active {
-    color: orange;
+    background-color: orange;
 }
 @keyframes effect1 {
     0% {
@@ -490,9 +508,25 @@ select {
  /* -----------------------------RESPONSIVE CSS--------------------------- */
 
 
+
+
+
+/* ------------------------JS------------------- */
 .hide {
     transform: translateX(100%);
 }
 .hide2 {
     transform: translateX(-100%);
 }
+.hide3 {
+    transform: translateY(-150%);
+}
+.rotate {
+    transform: rotate(180deg);
+}
+/* ------------------------JS------------------- */
+
+
+
+
+
