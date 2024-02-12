@@ -12,7 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /* ----------------------- TITLE SETTING----------------------- */
 .title {
     text-align: center;
@@ -39,6 +38,7 @@ button {
     padding: .5rem;
     opacity: .6;
     transition: .3s;
+    animation: effect1 .7s ease-in;
 }
 button:hover {
     opacity: 1;
@@ -103,7 +103,6 @@ button:active {
     font-size: 1.2rem;
     line-height: 30px;
     overflow: scroll;
-    user-select: none;
 }
 .container__item:hover {
     border-radius: 30px;
@@ -518,6 +517,12 @@ select {
 
 .rotate {
     transform: rotate(180deg);
+}
+.html-span {
+    color: blue;
+}
+.red {
+    color: red;
 }
 /* ------------------------JS------------------- */
 
