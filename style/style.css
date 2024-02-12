@@ -518,11 +518,12 @@ select {
 .rotate {
     transform: rotate(180deg);
 }
-.html-span {
-    color: blue;
+
+.change-span {
+    color: #5BD2CD;
 }
 .red {
-    color: red;
+    color: #EB7590;
 }
 /* ------------------------JS------------------- */
 
